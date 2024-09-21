@@ -64,6 +64,9 @@
     "nameOverride": {
       "type": "string"
     },
+    "namespaceOverride": {
+      "type": "string"
+    },
     "service": {
       "type": "object",
       "additionalProperties": false,
