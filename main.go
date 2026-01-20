@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/zapier/prom-aggregation-gateway/cmd"
+	"github.com/steve-wolter-ai/prom-aggregation-gateway/cmd"
 )
 
 func main() {

@@ -1,5 +1,7 @@
 # Prometheus Aggregation Gateway
 
+**This is a clone of https://github.com/zapier/prom-aggregation-gateway fixing incompatibilities with newer versions of github.com/prometheus/common**
+
 Prometheus Aggregation Gateway is a push gateway that aggregates metrics for Prometheus.  As opposed to the official [Prometheus Pushgateway](https://github.com/prometheus/pushgateway), this service aggregates the sample values it receives.
 
 * Counters where all labels match are added up.

@@ -13,6 +13,7 @@ import (
 	"github.com/gin-gonic/gin"
 	dto "github.com/prometheus/client_model/go"
 	"github.com/prometheus/common/expfmt"
+	"github.com/prometheus/common/model"
 )
 
 type metricFamily struct {
@@ -110,7 +111,7 @@ func (a *Aggregate) saveFamily(familyName string, family *dto.MetricFamily) erro
 }
 
 func (a *Aggregate) parseAndMerge(r io.Reader, labels []labelPair) error {
-	var parser expfmt.TextParser
+	parser := expfmt.NewTextParser(model.LegacyValidation)
 	inFamilies, err := parser.TextToMetricFamilies(r)
 	if err != nil {
 		return err

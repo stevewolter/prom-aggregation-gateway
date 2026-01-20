@@ -1,4 +1,4 @@
-module github.com/zapier/prom-aggregation-gateway
+module github.com/stevewolter/prom-aggregation-gateway
 
 go 1.21
 
